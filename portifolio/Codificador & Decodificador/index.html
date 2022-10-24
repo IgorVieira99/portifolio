@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Codificador.css">
+    <title>(DE)CODE</title>
+</head>
+
+<body>
+<div class="corpoDocumento">
+<!---ESTRUTURA SLIDE--->
+    <ul class="slideshow">
+        <li>
+            <span>Imagem 1</span>
+            <div>
+                <h3 class="textoSlide">(DE)CODE</h3>
+            </div>
+        </li>
+        <li>
+            <span>Imagem 2</span>
+            <div>
+                <h3 class="textoSlide">CODIFIQUE</h3>
+            </div>
+        </li>
+        <li>
+            <span>Imagem 3</span>
+            <div>
+                <h3 class="textoSlide">DECODIFIQUE</h3>
+            </div>
+        </li>
+        <li>
+            <span>Imagem 4</span>
+            <div>
+                <h3 class="textoSlide">DIVIRTA-SE</h3>
+            </div>
+        </li>
+    </ul>
+
+<!--CABEÇALHO-->
+
+    <header class="fonte">
+         <h1 id="titulo">(DE)CODE</h1>
+    </header>
+
+<!--FORMULÁRIO-->
+    <form class="formulario">
+    <div class="tagCentralizada">
+        <label for = 'textoEntrada'></label>
+        <input type="text" id="textoEntrada" class="background" placeholder="Digite ou cole sua mensagem aqui"> 
+    </div>  
+
+<br>
+
+<!--FORM. LISTA CODIFICAÇÃO-->
+    <div class="tagCentralizada">
+        <select id='menuOpçoes' class="lista background">
+            <option value="Escolha a Codificação">Escolha a Codificação</option>
+            <option value="cifraCesar">Cifra de Cesar</option>
+            <option value="base64">Base 64</option>
+        </select>
+
+<br>
+
+<!--FORM. LISTA NUMERAIS-->
+        <select id="numeral" class="lista background">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+        </select>        
+    </div>     
+
+<br>
+  
+<!--FORM. RADIO, INPUTS E OUTPUT-->
+    <div class="tagCentralizada">
+        <div class='radio background'>
+            <div>
+                <input type="radio" id='codificar' name='radio-Cesar' value="codeRadio"  checked>
+                <label for = 'codificar' id='codificarLabel'> Codificar </label> 
+            </div>
+            <div>
+                <input type="radio" id='decodificar' name='radio-Cesar' value="decodeRadio"  checked>
+                <label for = 'codificar' id='decodificarLabel'> Decodificar </label> 
+            </div>
+        </div>
+    </div>
+    
+<br>
+
+        <div class="tagCentralizada">
+            <input type="submit" value="Codificar" id="enviar" class="background">
+        </div>
+
+<br>
+
+        <div class="tagCentralizada">
+            <output type="text" class="textoSaida background">Sua mensagem aparecerá aqui.</output>
+        </div>
+
+    </form>
+</div>
+
+<br>
+
+<!--RODAPÉ-->
+<div class="tagCentralizada">
+    <footer>&copy Igor Vieira 2022 - Todos os Direitos Reservados</footer>
+</div>
+    
+    <script src='Codificador.js'></script>
+
+</body>
+</html>

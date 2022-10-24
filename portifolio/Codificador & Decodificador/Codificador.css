@@ -1,0 +1,208 @@
+
+/*-----CORPO GERAL-----*/
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
+
+*{
+    font-family: lobster;
+    color: white;
+}
+
+body{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 99%;
+}
+
+/*-----CABEÇALHO, TITULO E SUBTITULO-----*/
+header{
+    text-align: center;
+}
+
+#titulo{
+    font-size: 60px;
+}
+
+/*-----FORMULÁRIO-----*/
+#textoEntrada{
+    position: relative;
+    height: 90px;
+    width: 270px;
+    border-radius: 50px;
+}
+
+::placeholder{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.tagCentralizada{
+    display: flex;
+    justify-content: center;
+}
+
+.lista{
+    border-radius: 8px;
+}
+
+.background{
+    background-color: black;
+    border: solid 2px white;
+}
+
+.background:hover{
+    background-color: seagreen;
+    transition: 0.8s;
+}
+
+#numeral{
+    width: auto;
+}
+
+#enviar{
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 8px;
+}
+
+.textoSaida{
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    padding-top: 25px;
+}
+
+/*-----RODAPÉ-----*/
+footer{
+    margin-bottom: 0px;
+    margin-top: 90px;
+    background-color: black;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+/*-----MONTAGEM SLIDE-----*/
+.slideshow::after{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.slideshow::after{
+    content: '';
+    background: transparent url('') repeat top left;
+}
+
+li{
+    list-style-type: none;
+}
+
+.slideshow li span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: -1;
+    animation: animaçaoImagem 20s linear infinite 0s; 
+}
+
+.slideshow li div{ 
+    z-index: -1;
+    position: absolute;
+    top: 400px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    color: white;
+    animation: animaçaoTexto 20s linear infinite 0s; 
+}
+
+.slideshow li div h3{ 
+    text-align:start;
+    font-size: 100px;
+    padding: 5px;
+    z-index: -1;
+}
+
+/*--------IMAGENS SLIDE--------*/
+.slideshow li:nth-child(1) span{
+    background-image: url('https://conteudo.imguol.com.br/c/entretenimento/70/2021/05/25/codigo-binario-1621982130311_v2_900x506.jpg');
+}
+
+.slideshow li:nth-child(2) span{
+    background-image: url('https://community.vtex.com/uploads/default/original/2X/d/d51aee72eacdecf69cb2a0766b74f9136e350235.png');
+    animation-delay: 5s;
+}
+
+.slideshow li:nth-child(3) span{
+    background-image: url('https://www.johndcook.com/ascii.png');
+    animation-delay: 10s;
+}
+
+.slideshow li:nth-child(4) span{
+    background-image: url('https://wallpaperaccess.com/full/1777193.jpg');
+    animation-delay: 15s;
+}
+
+/*-----TEXTOS SLIDE-----*/
+.slideshow li:nth-child(2) div{
+    animation-delay: 5s;
+}
+
+.slideshow li:nth-child(3) div{
+    animation-delay: 10s;
+}
+
+.slideshow li:nth-child(4) div{
+    animation-delay: 15s;
+}
+
+/*------ANIMAÇÕES------*/
+@keyframes animaçaoImagem { 
+    0% { 
+        opacity: 0; 
+        animation-timing-function: ease-in; }
+    8% { 
+        opacity: 1; 
+        animation-timing-function: ease-in; }
+    17% { 
+        opacity: 1;;
+        animation-timing-function: ease-in; }
+    25% { 
+        opacity: 0;
+        animation-timing-function: ease-in; }
+    100% { 
+        opacity: 0;
+        animation-timing-function: ease-in; }
+}
+
+@keyframes animaçaoTexto { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
